@@ -1,0 +1,98 @@
+<!-- <app-header></app-header> -->
+
+{{title}}
+<!-- <h1>Hello World</h1>
+<h1>Name : {{name}}</h1>
+<h2>Number : {{number}}</h2>
+<h2>Boolean : {{bool}}</h2>
+<h2>Float is also considered a number only : {{float}}</h2>
+<h3>This is how we get values from getfunction : {{getname()}}</h3>
+<h3>We get name by this keyword : {{getnamebythis()}}</h3>
+<h3>We get these values by using objects and by default we get type of it as well : {{obj}}</h3>
+<h3>We get object first name by writing "obj.name" : {{obj.fname}}</h3>
+<h3>Similarly Object's lname and age : {{obj.fname}} {{ obj.lname }}, {{obj.age}} years old</h3>
+<h3>Array can be displayed as {{arr}}</h3>
+<h3>1st element of Array can be displayed as {{arr[0]}}</h3>
+<h3>2nd element of Array can be displayed as {{arr[1]}} and so on </h3>
+<h3>So to use Arithmetic operatons simply write 100 + 200 inside those 2 curly brackets : {{a+b}}</h3>
+<p>We cannot assign value from html page by writing open 2 curly brackets, write a = 10 and then close the brackets</p>
+<h3>We can get Url of our website by : {{siteUrl}} but we cannot use windows.location.href here</h3> -->
+<!-- <h3>
+    <app-login></app-login>
+</h3>
+<h3>
+    <app-signup> </app-signup>
+</h3>
+<button (click)="getnameonalert('Bhushu')"> get my name </button><br><br>
+<button (click)="myEvent('this is click event')"> Ye wala button press karo </button><br><br> -->
+<!-- <input type="text" (keyup)="getVal($e.target.value)">
+<input type="text" (keyup)="getVal1($event.target.value)"> -->
+<!-- <input type="text" #box><br><br>
+<button (click)="getVal(box.value)">Get Value</button>
+<h3>{{currentVal}}</h3>
+<br><br>
+<h3>Property Binding using [] like [value] = "name"</h3>
+<input type="text" [disabled]="disabledBox" [value]="name" /><br><br>
+<input type="text" disabled={{disabledBox}} value={{name}}><br><br>
+<button (click)="enableBox()">Enable TextBox</button> -->
+
+<!-- <h3>Here Press enter and see in the console</h3>
+<input type="text" #box (keyup.enter)="myEvent(box.value)"><br><br>
+<h3>Here also enter values in text box and click somewhere in the website</h3>
+<input type="text" #box (keyup.enter)="myEvent(box.value)"
+    (blur)="myEvent('blur Event hai means click somewhere in website')">
+<div (mouseover)="myEvent('mouse in ')" style="background-color: aqua;"> Mouse Events</div>
+<div (mouseleave)="myEvent('mouse out ')" style="background-color : yellow;"> Advertise </div> -->
+<!-- This is called Property whose value we get from app.component.ts 
+Any values which we want to carry to component.html from component.ts is called Interpolation
+To create a component write "ng g c userList" in here g stands for generate, c stands for component and userList is component's name in Camel Case-->
+<!-- 
+<h3>This is IF Condition</h3>
+<h3 *ngIf="show=='yes';then ifBlock else elseBlock"></h3>
+<ng-template #ifBlock>
+    <h3>If Block</h3>
+</ng-template>
+<ng-template #elseBlock>
+    <h3>Else Block</h3>
+</ng-template>
+<ng-template [ngIf]="color == 'red'">
+    <h3>Red Block</h3>
+</ng-template>
+<ng-template [nfIf]="color == 'green'">
+    <h3>Green Block</h3>
+</ng-template>
+<div [ngSwitch]="color">
+    <h3 *ngSwitchCase="'red'" style="color: red;">Red Color</h3>
+    <h3 *ngSwitchCase="'green'" style="color: green;">Green Color</h3>
+</div>
+<table border="1">
+    <tr>
+        <td><strong>Pokemon</strong></td>
+        <td><strong>Type</strong></td>
+    </tr>
+    <tr *ngFor="let item of pokemon">
+        <td>{{item.name}}</td>
+        <td>{{item.type}}</td>
+    </tr>
+</table> -->
+
+<!-- <form id="simpleForm" #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+    <label>User Name : </label>
+    <input type="text" ngModel name="username" placeholder="User Name">
+    &nbsp;&nbsp;<label>Age : </label>
+    <input type="text" ngModel name="age" placeholder="User Age"><br><br>
+    <label>User Email : </label>
+    <input type="text" ngModel name="useremail" placeholder="User Email">
+    &nbsp;&nbsp;<label>User Address : </label>
+    <input type="text" ngModel name="address" placeholder="User Address"><br><br>
+    <button>Get User Values</button>
+</form> -->
+
+
+<h3> Style Binding in Angular : </h3>
+<h1 style="color: red;"> Red Header 1</h1>
+<h1 [style.color]="'green'"> Green Header 2</h1>
+<!-- <h1 [style.color]="color">Dynamic Style</h1> -->
+<!-- <h2 [style.color]="">
+    <Button (click)="updateColor()">Update Color</Button>
+    <app-footer></app-footer> -->
